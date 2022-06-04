@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Agenda"
+    android:background="@raw/fondo">
+
+    <ImageView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@raw/agenda"
+        android:transitionName="logo_trans"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinnerAgenda"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slogan"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="85dp"
+            android:editable="false"
+            android:text="Agendo:"
+            android:textSize="15dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/perAgendo"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="5dp"
+            android:editable="false"
+            android:text=""
+            android:textSize="15dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="85dp"
+            android:editable="false"
+            android:text="Hora:"
+            android:textSize="15dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/horaAgendo"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="5dp"
+            android:editable="false"
+            android:text=""
+            android:textSize="15dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="85dp"
+            android:editable="false"
+            android:text="Cargas:"
+            android:textSize="15dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/cargasAgendo"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="5dp"
+            android:editable="false"
+            android:text=""
+            android:textSize="15dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="85dp"
+            android:editable="false"
+            android:text="Tipo:"
+            android:textSize="15dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/cargasTipo"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="5dp"
+            android:editable="false"
+            android:text=""
+            android:textSize="15dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/cargasDos"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="280dp"
+            android:editable="false"
+            android:text=""
+            android:textSize="15dp"
+            android:visibility="invisible"></androidx.appcompat.widget.AppCompatEditText>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_eliminar"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@raw/eliminar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toEndOf="@+id/btn_editar"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <ImageButton
+        android:id="@+id/btn_editar"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@raw/editar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <ImageButton
+        android:id="@+id/btn_regresar"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@raw/regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editar" />
+
+    <ImageButton
+        android:id="@+id/btn_cerrarsesion"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@raw/salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_regresar"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

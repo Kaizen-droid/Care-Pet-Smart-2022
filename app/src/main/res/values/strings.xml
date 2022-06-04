@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Care-Pet</string>
+    <string name="texto01">¡Bienvenido!</string>
+    <string name="texto02">Ingresa para continuar.</string>
+    <string name="texto03">Ingresa tus Datos</string>
+    <string name="texto04">Hola</string>
+    <string name="texto05">Hora:</string>
+    <string name="texto06">Aceptar terminos y condiciones</string>
+    <string-array name="cargas_extra">
+        <item>Ninguna</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="tipo">
+        <item>Ninguno</item>
+        <item>Chica</item>
+        <item>Mediana</item>
+        <item>Grande</item>
+    </string-array>
+</resources>

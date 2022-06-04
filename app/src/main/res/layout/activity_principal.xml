@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal"
+    android:background="@raw/fondo1">
+
+    <ImageView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@raw/slogan"
+        android:transitionName="logo_trans"
+        tools:ignore="MissingConstraints" />
+
+    <TimePicker android:id="@+id/hora"
+        android:layout_width="189dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="110dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="76dp"
+        android:background="@color/white"
+        android:editable="false"
+        android:text="@string/texto05"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/timePicker1"
+        app:layout_constraintTop_toTopOf="@+id/timePicker1" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="64dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="datetime"
+        android:paddingLeft="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/timePicker1"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:editable="false"
+            android:text="Carga extra:"
+            android:textSize="20dp"></androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:editable="false"
+            android:text="Tipo:"
+            android:textSize="20dp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerCargas"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/cargas_extra"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/tipo"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/spinnerCargas" />
+
+
+    <ImageButton
+        android:id="@+id/btn_verAgendados"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        android:background="@raw/veragendados"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_alimentar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toEndOf="@+id/btn_agendar"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTipo"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <ImageButton
+        android:id="@+id/btn_agendar"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:background="@raw/agendar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_alimentar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCargas"
+        app:layout_constraintVertical_bias="0.647" />
+
+
+    <ImageButton
+        android:id="@+id/btn_alimentar"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@raw/alimentar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agendar" />
+
+    <ImageButton
+        android:id="@+id/btn_cerrarsesion"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@raw/salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alimentar"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <ImageButton
+        android:id="@+id/btn_acerca"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@raw/acerca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alimentar"
+        app:layout_constraintVertical_bias="0.917" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/loginLayout"
+    android:background="@raw/fondo1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/imagen_logo"
+            android:layout_width="250dp"
+            android:layout_height="68dp"
+            android:src="@raw/registro"
+            android:transitionName="logo_trans" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nombre"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Apellidos"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Numero de teléfono"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Correo Electronico"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:editable="false"
+            android:text="Mascota:"
+            android:textSize="20dp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/gato"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Gato"
+            android:textSize="18dp">
+
+        </com.google.android.material.checkbox.MaterialCheckBox>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/perro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:text="Perro">
+
+        </com.google.android.material.checkbox.MaterialCheckBox>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:editable="false"
+            android:text="Tipo de Mascota:"
+            android:textSize="20dp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/chica"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Chica"
+            android:textSize="18dp">
+
+        </com.google.android.material.checkbox.MaterialCheckBox>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/mediana"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:text="Mediana">
+
+        </com.google.android.material.checkbox.MaterialCheckBox>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/grande"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:text="Grande">
+
+        </com.google.android.material.checkbox.MaterialCheckBox>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Contraseña"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtConfPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Confirmar contraseña"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/btn_registrar"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@raw/boton2" />
+
+        <ImageButton
+            android:id="@+id/btn_cancelar"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@raw/cancelar" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="-165dp"
+            android:layout_marginLeft="220dp"
+            android:background="@raw/pets"/>
+
+    </LinearLayout>
+</ScrollView>

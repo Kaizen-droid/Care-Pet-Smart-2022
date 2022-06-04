@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/loginLayout"
+    android:background="@raw/fondo1">
+
+    <ImageView
+        android:id="@+id/imagen_logo"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:src="@raw/login"
+        android:transitionName="logo_trans" />
+
+    <TextView
+        android:id="@+id/texto01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto01"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:transitionName="texto_transition"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/texto02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto02"
+        android:textSize="20sp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nombre de Usuario"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Contraseña"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbox_aceptar"
+        android:text="@string/texto06"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-15dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_ingresar"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@raw/boton1" />
+
+
+</LinearLayout>
